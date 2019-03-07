@@ -35,13 +35,21 @@
           font-family: 'Playfair Display SC';
           font-size: 50px;
         }
-            body {
-      background-image: url("http://sfwallpaper.com/images/city-at-night-background-22.jpg");
-      background-color: #cccccc;
-      background-size: auto;
-      background-repeat: no-repeat;
-      overflow: hidden;
-        }
+        body {
+            background-image: url("http://sfwallpaper.com/images/city-at-night-background-22.jpg");
+            background-color: #cccccc;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            height: 100%;
+            width: 100%;
+
+            overflow: hidden;
+              }
 
         .countdownContainer{
           position: absolute;
@@ -107,9 +115,20 @@
                 opacity: 0.7;
                 box-shadow: 0 12px 16px 0 rgb(0,191,255), 0 17px 50px 0 rgb(0,191,255);
             }
-
+            @media screen and (max-device-width: 768px) {
+              .fblogo {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform : translateX(-50%) translateY(-50%);
+                width: 65px;
+                height: 65px;
+              }
+              .
+            }
         </style>
 
+        <link rel="shortcut icon" type="image/x-icon" href="cornerlogo.jpg" />
 
         <table class="countdownContainer">
           <tr class="info">
